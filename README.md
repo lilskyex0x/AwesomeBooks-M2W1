@@ -57,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Awesome_Books] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Awesome_Books]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -203,16 +203,20 @@ Example:
 > Mention all of the collaborators of this project.
 
 👤 **Author1**
+- Aung Pyae Khant
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Aung Pyae Khant](https://github.com/lilskyex0x)
+- Twitter: [Aung Pyae Khant](https://twitter.com/LilSn0w45)
+- LinkedIn: [Aung Pyae Khant](https://linkedin.com/in/aung-pyae-khant-932342251)
+
+
 
 👤 **Author2**
+- Yash
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Yash](https://github.com/yash244466666)
+- LinkedIn: [Yash Solo](https://www.linkedin.com/in/yash-solo)
+- Twitter: [Yash Solo](https://twitter.com/yash_solo000)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
