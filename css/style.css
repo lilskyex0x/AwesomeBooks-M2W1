@@ -1,4 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.book {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.book h1,
+.book h2 {
+  font-family: 'Itim', cursive;
+}
+
+.book__lists {
+  border: 2px solid #000;
+  width: 30%;
+}
+
+.book__lists h2 {
+  display: none;
+}
+
+.bookItem {
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookItem:nth-child(odd) {
+  background-color: rgb(213, 213, 213);
+}
+
+.bookItem p {
+  font-family: 'Itim', cursive;
+}
+
+.bookItem button {
+  width: 20%;
+  text-align: center;
+  background-color: #fff;
+  font-family: 'Itim', cursive;
+  border-radius: 0;
+  padding: 5px 0;
+  transition: 0.3s all ease;
+}
+
+.bookItem button:hover {
+  border-radius: 0;
+  background: #e0e0e0;
+  box-shadow:
+    5px 5px 7px #5a5a5a,
+    -5px -5px 7px #fff;
+}
+
+.horizonLine {
+  height: 2px;
+  width: 5%;
+  background-color: #000;
+}
+
+.addbooks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title,
+.author {
+  width: 110%;
+  border: 2px solid #000;
+  padding: 5px;
+  font-family: 'Itim', cursive;
+}
+
+.addBtn {
+  align-self: flex-end;
+  text-align: center;
+  background-color: #fff;
+  font-family: 'Itim', cursive;
+  border-radius: 0;
+  padding: 5px 5px;
+  transition: 0.3s all ease;
+}
+
+.addBtn:hover {
+  border-radius: 0;
+  background: #e0e0e0;
+  box-shadow:
+    5px 5px 7px #5a5a5a,
+    -5px -5px 7px #fff;
 }
