@@ -57,7 +57,7 @@ function DisplayBooks(i) {
   const display = document.createElement('div');
   display.classList.add('bookItem');
   display.setAttribute('id', i.bookId);
-  display.innerHTML = `<p>${i.title}</p> <p>${i.author}</p>`;
+  display.innerHTML = `<p>"${i.title}" by ${i.author}</p>`;
 
   // Removing book from section
   const remove = document.createElement('button');
