@@ -3,10 +3,75 @@
 * {
   margin: 0;
   padding: 0;
+  /* list-style: none; */
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
+body{
+  background-image: url(../img/pexels-photo-10526919.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Itim', cursive;
+}
+
+/* ---------------NavBar Section Css Starts--------------------------------- */
+
+#navbar{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #000;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.nav__title{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__list{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.3rem;
+  list-style: none;
+}
+.list{
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+.addNew,
+.contact{
+  padding-left: 15px;
+  cursor: pointer;
+  border-left: 2px solid #000;
+  transition: .3s all ease;
+}
+
+.list:hover,
+.addNew:hover,
+.contact:hover{
+  color: cornflowerblue;
+}
+
+#date{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+/* ---------------NavBar Section Css Ends--------------------------------- */
+
+/* ---------------Book Section Css Starts--------------------------------- */
+
 .book {
-  height: 100vh;
+  width: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,17 +79,24 @@
   gap: 20px;
 }
 
-.book h1,
-.book h2 {
-  font-family: 'Itim', cursive;
+#bookSection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.book__lists {
+#bookSection h1{
+  font-size: 50px;
+}
+
+#book__lists {
+  width: 500px;
   border: 2px solid #000;
-  width: 30%;
 }
 
-.book__lists h2 {
+#book__lists h2 {
   display: none;
 }
 
@@ -37,11 +109,7 @@
 }
 
 .bookItem:nth-child(odd) {
-  background-color: rgb(213, 213, 213);
-}
-
-.bookItem p {
-  font-family: 'Itim', cursive;
+  background-color: rgb(181, 179, 179);
 }
 
 .bookItem button {
@@ -68,7 +136,20 @@
   background-color: #000;
 }
 
+#addNewBooks{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+#addNewBooks h2{
+  font-size: 40px;
+}
+
 .addbooks {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +157,7 @@
 
 .title,
 .author {
-  width: 110%;
+  width: 100%;
   border: 2px solid #000;
   padding: 5px;
   font-family: 'Itim', cursive;
@@ -99,3 +180,61 @@
     5px 5px 7px #5a5a5a,
     -5px -5px 7px #fff;
 }
+
+/* -------------------------Contact Info Section----------------------- */
+#contact__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.contactText h2{
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+}
+
+.contactText p{
+  font-size: 1.5rem;
+}
+
+.contact__mainList{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+
+.contact__emailList{
+  margin-left: 100px;
+  list-style: none;
+}
+
+.contact__phoneList{
+  margin-left: 167px;
+  list-style: none;
+}
+
+.contact__addressList{
+  margin-left: 113px;
+  list-style: none;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+
+.footer{
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #000;
+  padding: 0px 30px;
+}
+
