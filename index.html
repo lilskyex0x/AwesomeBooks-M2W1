@@ -13,18 +13,71 @@
     <script defer src="js/app.js"></script>
 </head>
 <body>
-    <header class="book">
-        <h1>Awesome Books</h1>
-        <section class="book__lists">
+    <!-- Navbar section starts here -->
+    <nav id="navbar">
+        <h3 class="nav__title">Awesome Books</h3>
+        <ul class="nav__list">
+            <li class="list">List</li>
+            <li class="addNew">Add New</li>
+            <li class="contact">Contact</li>
+        </ul>
+    </nav>
+    <div id="date"></div>
+    <!-- Navbar section ends here -->
 
+    <header class="book">
+        <!-- list section starts here -->
+        <section id="bookSection">
+            <h1>All Awesome Books</h1>
+            <div id="book__lists">
+    
+            </div>
+            <div class="horizonLine"></div>
         </section>
-        <div class="horizonLine"></div>
-        <h2>Add a new book</h2>
-        <form action="#" id="addbooks" class="addbooks">
-            <input type="text" class="title" placeholder="Title"> <br>
-            <input type="text" class="author" placeholder="Author"> <br>
-            <input type="submit" class="addBtn" value="Add Book">
-        </form>
+        <!-- list section ends here -->
+
+        <!-- Add New Section starts here -->
+        <section id="addNewBooks">
+            <h2>Add a new book</h2>
+            <form action="#" id="addbooks" class="addbooks">
+                <input type="text" class="title" placeholder="Title"> <br>
+                <input type="text" class="author" placeholder="Author"> <br>
+                <input type="submit" class="addBtn" value="Add Book">
+            </form>
+        </section>
+        <!-- Add New Section ends here -->
+
+        <!-- Contact info Section Starts here -->
+        <section id="contact__info">
+            <div class="contactText">
+                <h2>Contact information</h2>
+                <p>Do you have any questions or you just want to say "Hello"?</p>
+                <p>You can reach out to us</p>
+            </div>
+            <ul class="contact__mainList">
+                <li>Our E-mail: yash.solo.000@gmail.com
+                    <ul class="contact__emailList">
+                        <li>lilskyex0x.apk@gmail.com</li>
+                    </ul>
+                </li>
+                <li>Our Phone Number: +8801710008502
+                    <ul class="contact__phoneList">
+                        <li>+95 65432184632</li>
+                    </ul>
+                </li>
+                <li>Our Address: Patuakhali, Bangladesh
+                    <ul class="contact__addressList">
+                        <li>Yangon, Myanmar</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- Contact info Section Ends here -->
     </header>
+    <!-- Footer Section Starts here -->
+    <footer class="footer">
+        <p>Copyright @2022 developed by <b>LilSnow</b> and <b>Yash</b>.</p>
+    </footer>
+    <!-- Footer Section Ends here -->
 </body>
 </html>

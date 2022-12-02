@@ -51,7 +51,7 @@ addBtn.addEventListener('click', () => {
 
 // Display Book section
 function DisplayBooks(i) {
-  const bookListSection = document.querySelector('.book__lists');
+  const bookListSection = document.querySelector('#book__lists');
 
   // displaying Book in section
   const display = document.createElement('div');
@@ -73,6 +73,42 @@ function DisplayBooks(i) {
   // inserting display into section
   bookListSection.appendChild(display);
 }
+
+const date = new Date().toLocaleString();
+document.querySelector('#date').innerHTML = date;
+
+const listSection = document.querySelector('#bookSection');
+const list = document.querySelector('.list');
+const addNewBooks = document.querySelector('#addNewBooks');
+const contact = document.querySelector('#contact__info');
+
+list.addEventListener('click', () => {
+  listSection.style.display = 'flex';
+  addNewBooks.style.display = 'none';
+  contact.style.display = 'none';
+});
+
+window.addEventListener('load', () => {
+  listSection.style.display = 'flex';
+  addNewBooks.style.display = 'none';
+  contact.style.display = 'none';
+});
+
+const addNewBtn = document.querySelector('.addNew');
+
+addNewBtn.addEventListener('click', () => {
+  listSection.style.display = 'none';
+  addNewBooks.style.display = 'flex';
+  contact.style.display = 'none';
+});
+
+const contactBtn = document.querySelector('.contact');
+
+contactBtn.addEventListener('click', () => {
+  listSection.style.display = 'none';
+  addNewBooks.style.display = 'none';
+  contact.style.display = 'flex';
+});
 
 window.onload = () => {
   savebook.bookData = JSON.parse(localStorage.getItem('BookDataBase' || '[]'));
